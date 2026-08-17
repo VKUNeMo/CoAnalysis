@@ -1,0 +1,23 @@
+# Master Configuration for Churn Prediction Pipeline
+
+paths:
+  dataset_dir: "e:/Thạc Sĩ/Project/Platform hỗ trợ thử nghiệm/Dataset/Olist Brazilian E-Commerce"
+  output_dir: "e:/Thạc Sĩ/Project/Platform hỗ trợ thử nghiệm/Evaluation/Setting_B_after/outputs"
+  model_dir: "e:/Thạc Sĩ/Project/Platform hỗ trợ thử nghiệm/Evaluation/Setting_B_after/models"
+  data_dir: "e:/Thạc Sĩ/Project/Platform hỗ trợ thử nghiệm/Evaluation/Setting_B_after/data"
+  log_file: "e:/Thạc Sĩ/Project/Platform hỗ trợ thử nghiệm/Evaluation/Setting_B_after/outputs/pipeline.log"
+
+cohort:
+  observation_window_days: 180
+  prediction_window_days: 90
+  train_cutoff: "2018-02-01"
+  test_cutoff: "2018-05-01"
+
+memory:
+  threshold_gb: 6.0
+
+modeling:
+  cv_folds: 3
+  cv_gap_days: 30
+  tuner_iter: 20
+  random_state: 42

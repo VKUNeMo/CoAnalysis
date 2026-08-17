@@ -216,3 +216,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Evaluation experimental data, outputs, models, and caches
+data/
+outputs/
+outputs_backup/
+output/
+models/
+plots/
+*.csv
+*.parquet
+*.xlsx
+*.xls
+*.h5
+*.pkl
+*.pickle
+*.joblib
+*.sqlite
+*.db
+
